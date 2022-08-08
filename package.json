@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-tailwind-storybook-starter",
+  "version": "1.0.0",
+  "description": "Nuxt Tailwind Storybook Starter is a starter template for adding Storybook to a Nuxt.js project that uses Tailwind.",
+  "author": "Shadow Smith",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --port 2000",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest",
+    "storybook": "npx tailwind build assets/css/tailwind.css -o assets/css/main.css && start-storybook -p 2001"
+  },
+  "dependencies": {
+    "@storybook/addons": "^6.5.9",
+    "@storybook/theming": "^6.5.9",
+    "nuxt": "^2.0.0",
+    "storybook-addon-designs": "^6.3.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "@storybook/addon-a11y": "^6.5.9",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "^6.5.9",
+    "@storybook/testing-library": "0.0.13",
+    "@storybook/vue": "^6.5.9",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "autoprefixer": "^10.4.7",
+    "babel-jest": "^24.1.0",
+    "babel-preset-vue": "^2.0.2",
+    "css-loader": "^3.2.0",
+    "postcss": "^8.4.14",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
